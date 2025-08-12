@@ -1,4 +1,4 @@
-package com.example.questnavigasimvvm
+package com.example.questnavigasimvvm.view
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
@@ -25,6 +25,8 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.colorResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
+import com.example.questnavigasimvvm.R
+
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 
@@ -36,7 +38,7 @@ fun FormIsi(
         modifier = Modifier,
         topBar = {
             TopAppBar(
-                title = { Text(text = stringResource(id = "home"), color = Color.White) },
+                title = { Text(text = stringResource(id = R.string.home), color = Color.White) },
                 colors = TopAppBarDefaults.mediumTopAppBarColors(
                     containerColor = colorResource(id = R.color.teal_700)
                 )
@@ -106,7 +108,7 @@ fun FormIsi(
                     .padding(all = 25.dp),
                 onClick = onSubmitbtnClick
             ) {
-                Text(text = stringResource(id = "submit"))
+                Text(text = stringResource(id = R.string.submit))
             }
         }
     }

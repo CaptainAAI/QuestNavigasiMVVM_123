@@ -9,6 +9,8 @@ import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import com.example.questnavigasimvvm.view.FormIsi
 import com.example.questnavigasimvvm.view.TampilData
+import androidx.navigation.compose.rememberNavController
+
 
 
 enum class Navigasi {
