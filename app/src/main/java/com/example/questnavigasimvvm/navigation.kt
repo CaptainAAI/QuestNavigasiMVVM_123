@@ -24,3 +24,11 @@ fun DataApp(navController: NavHostController = rememberNavController()) {
             startDestination = Navigasi.Formulir.name,
             modifier = Modifier.padding(paddingValues = isiRuang)
         )
+        {
+            composable(route = Navigasi.Formulir.name) {
+                FormIsi(
+                    onSubmitbtnClick = {
+                        navController.navigate(route = Navigasi.Detail.name)
+                    }
+                )
+        }
