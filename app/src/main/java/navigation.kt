@@ -1,5 +1,4 @@
-package com.example.navigasiku
-
+package com.example.questnavigasimvvm
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Scaffold
 import androidx.compose.runtime.Composable
@@ -8,8 +7,9 @@ import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
-import com.example.navigasiku.view.FormIsi
-import com.example.navigasiku.view.TampilData
+import com.example.questnavigasimvvm.view.FormIsi
+import com.example.questnavigasimvvm.view.TampilData
+
 
 enum class Navigasi {
     Formulir,
